@@ -133,40 +133,6 @@ select:-webkit-autofill:focus {
     flex-grow: 1;
 }
 
-/*Site header hero wrapper*/
-.site-header-hero-wrapper {
-    padding-top: 56px;
-    background-color: var(--dark-purple);
-}
-
-/*Button  */
-.button {
-    display: inline-block;
-    background-color: var(--eucaplytus);
-    border: 2px solid transparent;
-    padding: 11px 24px 14px;
-    color: var(--dark-purple);
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 32px;
-    letter-spacing: -0.18px;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: border-color ease var(--transition-duration),
-    background-color ease var(--transition-duration),
-    color ease var(--transition-duration),
-    opacity ease var(--transition-duration),
-}
-
-.button:hover {
-    border-color: var(--eucaplytus);
-    background-color: transparent;
-    color: var(--eucaplytus);
-}
-.button:active {
-    opacity: 0.6;
-}
 
 /*Logo*/
 
@@ -194,6 +160,7 @@ select:-webkit-autofill:focus {
     height: 26px;
 }
 
+
 /*underline link*/
 .underline-link {
     display: inline-block;
@@ -204,7 +171,7 @@ select:-webkit-autofill:focus {
     line-height: 32px;
     font-weight: bold;
     transition: color ease var(--transition-duration),
-    opacity ease var(--transition-duration );
+        opacity ease var(--transition-duration );
 }
 
 .underline-link:hover {
@@ -213,6 +180,54 @@ select:-webkit-autofill:focus {
 
 .underline-link:active {
     opacity: 0.6;
+}
+
+
+/*Underline text */
+.underline-text {
+
+    display: inline-block;
+    border-bottom: 3px solid var(--eucaplytus);
+
+}
+
+
+
+/*Button  */
+.button {
+    display: inline-block;
+    padding: 11px 24px 14px;
+    background-color: var(--eucaplytus);
+    border: 2px solid transparent;
+    color: var(--dark-purple);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: border-color ease var(--transition-duration),
+    background-color ease var(--transition-duration),
+    color ease var(--transition-duration),
+    opacity ease var(--transition-duration),
+}
+
+.button:hover {
+    border-color: var(--eucaplytus);
+    background-color: transparent;
+    color: var(--eucaplytus);
+}
+.button:active {
+    opacity: 0.6;
+}
+
+
+
+/*Site header hero wrapper*/
+.site-header-hero-wrapper {
+    padding-top: 56px;
+    background-color: var(--dark-purple);
 }
 
 /*site header */
@@ -226,10 +241,6 @@ select:-webkit-autofill:focus {
 }
 
 
-.underline-link {
-
-}
-
 
 /*hero*/
 .hero_container {
@@ -239,16 +250,13 @@ select:-webkit-autofill:focus {
 
 
 }
-.hero_picture {
-    display: block;
-}
+
 
 .hero_heading {
     max-width: 635px;
     margin-top: 0;
     margin-bottom: 36px;
     font-family: var(--heading-font-family);
-    font-weight: 600;
     font-size: 80px;
     line-height: 1;
     color: white;
@@ -256,13 +264,6 @@ select:-webkit-autofill:focus {
 }
 
 
-/*Underline text */
-.underline-text {
-
-    display: inline-block;
-    border-bottom: 3px solid var(--eucaplytus);
-
-}
 
 .hero_button {
     margin-bottom: 50px;
@@ -270,7 +271,14 @@ select:-webkit-autofill:focus {
 
 
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
 
 }
 
@@ -286,7 +294,27 @@ select:-webkit-autofill:focus {
       max-width: 465px;
         font-size: 60px;
         line-height: 1;
-        margin-bottom: 400px;
+        margin-bottom: 40px;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .site-header_container {
+        margin-bottom: 64px;
+    }
+
+    .hero_heading {
+        max-width: 80%;
+        font-size: 50px;
+    }
+
+    .hero_button {
+        margin-bottom: 60px;
+    }
 }
