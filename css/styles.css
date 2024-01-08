@@ -120,9 +120,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1146px;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 1194px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -239,12 +239,16 @@ select:-webkit-autofill:focus {
 
 
 }
+.hero_picture {
+    display: block;
+}
 
 .hero_heading {
     max-width: 635px;
     margin-top: 0;
     margin-bottom: 36px;
     font-family: var(--heading-font-family);
+    font-weight: 600;
     font-size: 80px;
     line-height: 1;
     color: white;
@@ -267,5 +271,22 @@ select:-webkit-autofill:focus {
 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (   min--moz-device-pixel-ratio: 2), only screen and (     -o-min-device-pixel-ratio: 2/1), only screen and (        min-device-pixel-ratio: 2), only screen and (                min-resolution: 192dpi), only screen and (                min-resolution: 2dppx) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .site-header-hero-wrapper {
+        padding-top: 36px;
+    }
+    .site-header_container {
+        margin-bottom: 60px;
+    }
+
+    .hero_heading {
+      max-width: 465px;
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 400px;
+    }
 
 }
